@@ -2,7 +2,7 @@
   "name": "nodejs-express-api",
   "version": "1.0.0",
   "description": "Basic NodeJS App with Express",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
