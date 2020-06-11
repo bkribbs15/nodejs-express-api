@@ -1,5 +1,11 @@
 var express = require('express');
 var app = express();
+var cors = require('cors')
+
+app.use(cors())
+
+app.options('*', cors())
+
 app.get('/', function (req, res) {
   res.status(200).send('Hello World!');
 });
