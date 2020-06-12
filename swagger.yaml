@@ -6,7 +6,7 @@ info:
 schemes:
   - https
 host: $(catalog.host)
-basePath: /v1
+basePath: /v2
 consumes:
   - application/json
 produces:
