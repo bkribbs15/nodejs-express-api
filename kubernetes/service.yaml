@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: "nodejs-api-service"
+  name: nodejs-api-service
 spec:
   type: NodePort
   ports:
