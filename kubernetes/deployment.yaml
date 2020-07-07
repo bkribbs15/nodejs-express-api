@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: nodejs-api-app
-        image: ibmcase/nodejs-api
+        image: ibmcase/nodejs-api:v1.0
         imagePullPolicy: Always
         ports:
           - containerPort: 3000
