@@ -36,7 +36,7 @@ x-ibm-configuration:
                     stop-on-error:
                       - null
                     version: 1.0.0
-                    target-url: 'http://169.51.194.50:30758/students'
+                    target-url: 'http://184.172.253.11:32542/students'
             - operations:
                 - verb: get
                   path: /testers
@@ -50,21 +50,7 @@ x-ibm-configuration:
                     stop-on-error:
                       - null
                     version: 1.0.0
-                    target-url: 'http://169.51.194.50:30758/testers'
-            - operations:
-                - verb: get
-                  path: /
-              execute:
-                - invoke:
-                    title: /
-                    timeout: 60
-                    verb: GET
-                    cache-response: protocol
-                    cache-ttl: 900
-                    stop-on-error:
-                      - null
-                    version: 1.0.0
-                    target-url: 'http://169.51.194.50:30758'
+                    target-url: 'http://184.172.253.11:32542/testers'
           otherwise: []
           version: 1.0.0
   phase: realized
@@ -75,11 +61,6 @@ paths:
         '200':
           description: 200 OK
   /students:
-    get:
-      responses:
-        '200':
-          description: 200 OK
-  /:
     get:
       responses:
         '200':
