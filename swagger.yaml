@@ -36,7 +36,7 @@ x-ibm-configuration:
                     stop-on-error:
                       - null
                     version: 1.0.0
-                    target-url: 'http://169.51.204.16:32693/students'
+                    target-url: 'http://173.193.79.56:32765/students'
             - operations:
                 - verb: get
                   path: /testers
@@ -50,7 +50,7 @@ x-ibm-configuration:
                     stop-on-error:
                       - null
                     version: 1.0.0
-                    target-url: 'http://169.51.204.16:32693/testers'
+                    target-url: 'http://173.193.79.56:32765/testers'
           otherwise: []
           version: 1.0.0
   phase: realized
