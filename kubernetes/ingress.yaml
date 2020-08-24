@@ -10,4 +10,4 @@ spec:
           - path: /
             backend:
               serviceName: nodejs-api-service
-              servicePort: 3000
+              servicePort: 32765
