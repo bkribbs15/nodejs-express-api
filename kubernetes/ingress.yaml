@@ -1,8 +1,7 @@
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
-  name: tekton-ingress
-  namespace: prod
+  name: api-ingress
 spec:
   rules:
     - host: apiconnect.173.193.79.56.nip.io
