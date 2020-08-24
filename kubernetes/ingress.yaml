@@ -1,0 +1,14 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: tekton-ingress
+  namespace: prod
+spec:
+  rules:
+    - host: apiconnect.173.193.79.56.nip.io
+      http:
+        paths:
+          - path: /
+            backend:
+              serviceName: nodejs-api-service
+              servicePort: 3000
