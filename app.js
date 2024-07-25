@@ -13,7 +13,13 @@ app.listen(3000, function () {
 });
 
 app.get('/', function(req, res) {
-  res.sendFile(path.join(__dirname + 'index.html'));
+  res.sendFile(path.join(__dirname + '/index.html'));
+});
+
+process.on('SIGINT', function() {
+  console.log( "\nGracefully shutting down from SIGINT (Ctrl-C)" );
+  // some other closing procedures go here
+  process.exit(0);
 });
 
 app.get('/testers', function (req, res) {
